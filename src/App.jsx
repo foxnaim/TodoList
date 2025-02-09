@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './screens/home'
+import TaskManager from './components/TaskManager';
 
 function App() {
   return (
     <React.Fragment>
-      <Home/>
+       <TaskManager />
     </React.Fragment>
   )
 }

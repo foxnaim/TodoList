@@ -25,7 +25,7 @@ function TaskForm({ onAddTask }) {
   };
 
   return (
-    <div className="bg-custom p-6 rounded-2xl shadow-xl max-w-md mx-auto mt-10">
+    <div className=" p-6 rounded-2xl shadow-xl max-w-md mx-auto mt-10">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-center">Создать задачу</h1>
         
