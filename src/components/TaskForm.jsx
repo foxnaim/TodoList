@@ -34,7 +34,7 @@ function TaskForm({ onAddTask }) {
           placeholder="Название"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600"
+          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-100 text-white"
           required
         />
         
@@ -42,21 +42,21 @@ function TaskForm({ onAddTask }) {
           placeholder="Описание"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="p-2 border rounded-lg h-24 focus:outline-none focus:ring-2 focus:ring-gray-600"
+          className="p-2 border rounded-lg h-24 focus:outline-none focus:ring-2 focus:ring-gray-100 text-white" 
         />
         
         <input
           type="date"
           value={deadline}
           onChange={(e) => setDeadline(e.target.value)}
-          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600"
+          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-100"
           required
         />
         
         <select
           value={priority}
           onChange={(e) => setPriority(e.target.value)}
-          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600"
+          className="p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-100"
         >
           <option value="low">Низкий</option>
           <option value="medium">Средний</option>
