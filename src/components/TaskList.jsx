@@ -33,7 +33,7 @@ function TaskList({ tasks, onToggleComplete, filter, sortBy, onDeleteTask }) {
            {isOverdue && <p style={{ color: "red" }}>Просрочено!</p>}
            <div className="gap-4">
            <button onClick={() => onToggleComplete(task.id)}>
-             {task.completed ? "Отменить" : "Завершить"}
+             {task.completed ? "❌ Отменить" : "✅ Завершить"}
            </button>
            <br/>
            <button onClick={() => onDeleteTask(task.id)} style={{ color: "red" }}>
